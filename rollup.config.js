@@ -1,6 +1,7 @@
 import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import {string} from 'rollup-plugin-string';
+import copy from 'rollup-plugin-copy';
 
 export default {
 	input: 'src/main.js',
@@ -14,6 +15,11 @@ export default {
 		commonjs(),
 		string({
 			include: ['**/*.gltf', '**/*.glsl'],
+		}),
+		copy({
+			targets: [
+				{src: 'index.html', dest: 'build'}
+			]
 		})
 	]
 };
