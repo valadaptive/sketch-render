@@ -33,3 +33,4 @@ jobs:
       with:
         publish_dir: build
         github_token: ${{ secrets.GITHUB_TOKEN }}
+        cname: sketch-render.vala.wtf
