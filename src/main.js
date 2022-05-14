@@ -22,7 +22,7 @@ for (const item of items) {
 }
 root.scale.xyz = [0.75, 0.75, 0.75];
 
-const fumo = items[3];
+const fumo = items[4];
 fumo.rotation.y = 120;
 
 const camera = items[0]._children[0];
