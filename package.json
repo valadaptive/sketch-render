@@ -1,0 +1,23 @@
+{
+  "name": "sketch-render",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "rollup -c",
+    "watch": "rollup -c --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "valadaptive",
+  "license": "MIT",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "eslint": "^8.14.0",
+    "rollup": "^2.72.0",
+    "rollup-plugin-string": "^3.0.0"
+  },
+  "dependencies": {
+    "gl-matrix": "^3.4.3"
+  }
+}
