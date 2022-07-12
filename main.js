@@ -1229,7 +1229,7 @@
   	}
 
   	render (rootItem) {
-  		this._time = (Date.now() - 1652477321435) / 1000;
+  		this._time = (Date.now() / 1000) % 10000;
   		invert(__viewMatrix, this._camera.transformMatrix);
   		multiply(this._viewProjectionMatrix, this._camera.projectionMatrix, __viewMatrix);
 
